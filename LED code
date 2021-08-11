@@ -47,3 +47,14 @@ ORG 000H
 DELAY: MOV R7,#250D        // 1mS delay
  DEL1: DJNZ R7,DEL1
        RET
+LUT: DB 3FH                // Look up table (LUT) starts here
+     DB 06H
+	 DB 5BH
+     DB 4FH
+     DB 66H
+     DB 6DH
+     DB 7DH
+     DB 07H
+     DB 7FH
+     DB 6FH
+END
